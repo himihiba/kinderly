@@ -1,0 +1,70 @@
+/* humburger menu */
+
+.input__toggel{
+    display: none;
+    transition: top 50ms ease;
+}
+.nav__toggel{
+    cursor: pointer;
+    display: none;
+}
+.navig_menu{
+    position: relative;
+}
+.navig_menu,.navig_menu::after,.navig_menu::before{
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: black;
+}
+  .navig_menu::after,.navig_menu::before{
+    content: '';
+    position: absolute;
+    transition: rotate 500ms ease ;
+  }
+  .navig_menu::after{
+    bottom: 7px;
+  }
+  .navig_menu::before{
+    top: 7px;
+  }
+  
+  /* nav drop */
+  
+  .input__toggel:checked~  .nav__menu{
+    top:10em;
+  }
+  .input__toggel:checked~ label span::after{
+    display: none;
+  }
+  .input__toggel:checked~ label span::before{
+    top: 0;
+    rotate: 90deg;
+  }
+  label span{
+    transition: rotate 500ms ease ;
+  }
+  .input__toggel:checked~ label span{
+    rotate: 45deg;
+  }
+  
+  /* Navigation for mobile devices */
+  
+  @media  screen and (max-width:1000px)  {
+    .nav__menu{
+      position: fixed;
+      top: -200%;
+      width: 90%;
+      text-align: center;
+      transition: top 0.7s ease;
+    }
+    .nav__toggel{
+      display: block;
+    }
+    .nav__list{
+      flex-direction: column;
+      gap: 2em;
+      width: 100%;
+      padding: 2em 0;
+    }
+  }
