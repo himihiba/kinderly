@@ -1,0 +1,27 @@
+.show__product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 50%;
+    gap: .5em;
+}
+.img1 {
+    grid-column: 1 / -1; 
+    width: 100%; 
+}
+.img2,.img3{
+    max-height: 230px;
+    object-fit: cover;
+}
+.img2 {
+    grid-column: 1;
+    width: 100%;
+}
+
+.img3 {
+    grid-column: 2; 
+    width: 100%; 
+}
+.img2,.img3,.img1{
+    border-radius: 12px;
+}

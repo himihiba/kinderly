@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinderly</title>
+    <!-- title icon -->
+     <link rel="shortcut icon" href="./img/title-img.jpg" type="image/x-icon">
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="css/toggel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+    <!-- google font  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+    </style>
+</head>
+<body>
+    <!-- header -->
+     <header class="header">
+        <nav class="nav container flex">
+            <a href="index.html" class="logo">Kinderly</a>
+            <div class="search__bar">
+                <input type="search" placeholder="Search">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <input type="checkbox" class="input__toggel" id="inputToggel">
+            <div class="nav__menu flex">
+                <ul class="nav__list flex">
+                    <li><a href="#" class="nav__link">Categories</a></li>
+                    <li><a href="#" class="nav__link">Deals</a></li>
+                    <li><a href="#" class="nav__link">News</a></li>
+                </ul>
+                <div class="nav__icon flex">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <div class="profile__image">
+                        <img src="img/profileImg.svg" alt="image" class="profile__img" width="40">
+                    </div>
+                </div>
+            </div>
+            <label for="inputToggel" class="nav__toggel">
+                <span class="navig_menu"></span>
+            </label>
+        </nav>
+     </header>
+
+    <!-- main -->
+     <main>
+        <div class="container">
+            <section class="section sec1 flex">
+                <aside class="filters">
+                    <div class="aside__container">
+                        <h1 class="aside__title">FILTERS</h1>
+                        <div class="avaibal">
+                            <h2 class="av_title">Availability</h2>
+                            <form class="av_chek">
+                                <label>
+                                    <input type="checkbox" name="stock" value="In Stock">
+                                    In Stock <span>(123)</span>
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="stock" value="Out Of Stock">
+                                    Out Of Stock <span>(123)</span>
+                                </label><br>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="rating">
+                            <h2 class="rat__title">Customer ratings</h2>
+                            <div class="star-rating">
+                                <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">★</label>
+    
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">★</label>
+    
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">★</label>
+    
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">★</label>
+    
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">★</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="price">
+                            <input type="text" placeholder="From">
+                            <input type="text" placeholder="To">
+                        </div>
+                        <hr>
+                        <div class="brands">
+                            <h2 class="bd__title">Brands</h2>
+                            <div class="serch__bar">
+                                <input type="text" placeholder="search Brand" class="serch">
+                                <div class="serch__icon">
+                                    
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <p class="brands__name">
+                                Brittax <br>
+                                Chicco <br>
+                                Sybex <br>
+                                Graco <br>
+                                <span>View more</span>
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="product__type">
+                            <h2 class="prd__">Product type</h2>
+                            <div class="serch__bar">
+                                <input type="text" placeholder="search Brand" class="serch">
+                                <div class="serch__icon">
+                                    
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <form class="brd_chek">
+                                <label>
+                                    <input type="checkbox" name="brand" value="jogging stroler">
+                                    jogging stroler
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="brand" value="suits">
+                                    suits <span>(23)</span>
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="brand" value="jogging stroler">
+                                    jogging stroler
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="brand" value="suits">
+                                    suits <span>(23)</span>
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="brand" value="jogging stroler">
+                                    jogging stroler
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="brand" value="suits">
+                                    suits <span>(23)</span>
+                                </label><br>
+                                <span>View more</span>
+                            </form>
+                        </div>
+                        <hr>
+                        <div class="color">
+                            <h2 class="col__title">Color</h2>
+                            <form class="col_chek">
+                                <label>
+                                    <input type="checkbox" name="color" value="Black">
+                                    Black <span>(13)</span>
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="color" value="white">
+                                    white <span>(23)</span>
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="color" value="Green">
+                                    Green <span>(4)</span>
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="color" value="Red">
+                                    Red <span>(8)</span>
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="color" value="Yellow">
+                                    Yellow <span>(45)</span>
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" name="color" value="Orange">
+                                    Orange <span>(43)</span>
+                                </label><br>
+                            </form>
+                        </div>
+                        <hr>
+                    </div>
+                </aside>
+                <div class="products">
+                    <div class="prod__container">
+                        <a href="category.html" class="product__card  CARD2">
+                            <div class="show__product">
+                                <div class="product__image">
+                                    <img src="../img/product1.svg" alt="image" class="product_img">
+                                </div>
+                                <div class="icons_cont">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="takieem">
+                                <p class="brand_name">Chicco</p>
+                                <div class="stars">
+                                    
+                                </div>
+                            </div>
+                            <p class="product__name">Kurti Full Sleev</p>
+                            <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                        </a>
+                        <a href="../category/category.html" class="product__card CARD2">
+                            <div class="show__product">
+                                <div class="product__image">
+                                    <img src="../img/product2.svg" alt="image" class="product_img">
+                                </div>
+                                <div class="icons_cont">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="takieem">
+                                <p class="brand_name">Chicco</p>
+                                <div class="stars">
+                                    
+                                </div>
+                            </div>
+                            <p class="product__name">Kurti Full Sleev</p>
+                            <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                        </a>
+                        <a href="../category/category.html"  class="product__card CARD2">
+                            <div class="show__product">
+                                <div class="product__image">
+                                    <img src="../img/product3.svg" alt="image" class="product_img">
+                                </div>
+                                <div class="icons_cont">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="takieem">
+                                <p class="brand_name">Chicco</p>
+                                <div class="stars">
+                                    
+                                </div>
+                            </div>
+                            <p class="product__name">Kurti Full Sleev</p>
+                            <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                        </a>
+                        <a href="../category/category.html" class="product__card CARD2">
+                            <div class="show__product">
+                                <div class="product__image">
+                                    <img src="../img/product2.svg" alt="image" class="product_img">
+                                </div>
+                                <div class="icons_cont">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="takieem">
+                                <p class="brand_name">Chicco</p>
+                                <div class="stars">
+                                    
+                                </div>
+                            </div>
+                            <p class="product__name">Kurti Full Sleev</p>
+                            <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                        </a>
+                        <a href="../category/category.html"  class="product__card CARD2">
+                            <div class="show__product">
+                                <div class="product__image">
+                                    <img src="../img/product3.svg" alt="image" class="product_img">
+                                </div>
+                                <div class="icons_cont">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="takieem">
+                                <p class="brand_name">Chicco</p>
+                                <div class="stars">
+                                    
+                                </div>
+                            </div>
+                            <p class="product__name">Kurti Full Sleev</p>
+                            <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                        </a>
+                        <a href="../category/category.html" class="product__card CARD2">
+                            <div class="show__product">
+                                <div class="product__image">
+                                    <img src="../img/product1.svg" alt="image" class="product_img">
+                                </div>
+                                <div class="icons_cont">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="takieem">
+                                <p class="brand_name">Chicco</p>
+                                <div class="stars">
+                                    
+                                </div>
+                            </div>
+                            <p class="product__name">Kurti Full Sleev</p>
+                            <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                        </a>
+                        <a href="../category/category.html" class="product__card CARD2">
+                            <div class="show__product">
+                                <div class="product__image">
+                                    <img src="../img/product2.svg" alt="image" class="product_img">
+                                </div>
+                                <div class="icons_cont">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="takieem">
+                                <p class="brand_name">Chicco</p>
+                                <div class="stars">
+                                    
+                                </div>
+                            </div>
+                            <p class="product__name">Kurti Full Sleev</p>
+                            <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                        </a>
+                        <a href="../category/category.html"  class="product__card CARD2">
+                            <div class="show__product">
+                                <div class="product__image">
+                                    <img src="../img/product3.svg" alt="image" class="product_img">
+                                </div>
+                                <div class="icons_cont">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="takieem">
+                                <p class="brand_name">Chicco</p>
+                                <div class="stars">
+                                    
+                                </div>
+                            </div>
+                            <p class="product__name">Kurti Full Sleev</p>
+                            <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                        </a>
+                    </div>
+                    <p>1 2 .....6 Next </p>
+                </div>
+            </section>
+            <section class="section sec2">
+                <div class="slider grid">
+                    <p class="new__ar">Recently viewed</p>
+                    <div class="slider_container">
+                        <div class="card__wraper flex">
+                            <div class="product__card">
+                                <div class="show__product">
+                                    <div class="product__image">
+                                        <img src="img/listgirl1.svg" alt="image" class="product_img">
+                                    </div>
+                                    <div class="icons_cont">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="takieem">
+                                    <p class="brand_name">Chicco</p>
+                                    <div class="stars">
+                                        
+                                    </div>
+                                </div>
+                                <p class="product__name">Kurti Full Sleev</p>
+                                <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                            </div>
+                            <div class="product__card">
+                                <div class="show__product">
+                                    <div class="product__image">
+                                        <img src="img/listgirl2.svg" alt="image" class="product_img">
+                                    </div>
+                                    <div class="icons_cont">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="takieem">
+                                    <p class="brand_name">Chicco</p>
+                                    <div class="stars">
+                                        
+                                    </div>
+                                </div>
+                                <p class="product__name">Kurti Full Sleev</p>
+                                <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                            </div>
+                            <div class="product__card">
+                                <div class="show__product">
+                                    <div class="product__image">
+                                        <img src="img/listgirl3.svg" alt="image" class="product_img">
+                                    </div>
+                                    <div class="icons_cont">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                        <ion-icon name="bag-handle-outline"></ion-icon>
+                                        <ion-icon name="image-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="takieem">
+                                    <p class="brand_name">Chicco</p>
+                                    <div class="stars">
+                                    </div>
+                                </div>
+                                <p class="product__name">Kurti Full Sleev</p>
+                                <p class="price">&dollar;200 <del>&dollar;300</del></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+     </main>
+
+
+    <!-- footer -->
+     <footer class="footer container">
+        <div class="site__content">
+            <div class="content">
+                <h2 class="content__title">kinderly</h2>
+                <p class="content__par">At kinderly, we believe that every child deserves to express their unique style with comfort and joy. Our carefully curated collection of playful and vibrant clothing is designed to move with them, whether they're exploring the great outdoors or attending a special event. With a focus on quality fabrics and cheerful patterns, we ensure that each piece is as durable as it is delightful, allowing kids to feel free and confident in every adventure.</p>
+            </div>
+            <div class="content">
+                <h2 class="content__title">Quick Links</h2>
+                <a href="#">ABOUT</a>
+                <a href="#">Process</a>
+                <a href="#">contact</a>
+                <a href="#">Services</a>
+                <a href="#">Experience</a>
+                <a href="#">privacy policy</a>
+            </div>
+            <div class="content">
+                <h2 class="content__title">company info</h2>
+                <a href="#">Terms of Use</a>
+                <a href="#">Promotions & Offers</a>
+                <a href="#">Find Store Location</a>
+                <a href="#">Accessibility</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="content">
+                <p class="number">Call 1-878-876-9879</p>
+                <p class="content__par">For inquiries and support</p>
+            </div>
+        </div>
+        <div class="site__right">
+            <p class="rights">© 2024 Little Sprouts. All rights reserved. Website developed by Himi Hiba
+            <ion-icon name="logo-github"></ion-icon>,
+            Front-End Developer. UI/UX design by [Designer’s Name].</p>
+            <div class="social__icons">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </div>
+        </div>
+     </footer>
+
+     <!-- ionicons -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>

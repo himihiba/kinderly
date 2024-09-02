@@ -1,0 +1,12 @@
+aside{
+    width: 30%;
+}
+.products{
+    width: 60%;
+}
+
+.prod__container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1em;
+}
