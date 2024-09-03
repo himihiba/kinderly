@@ -1,0 +1,10 @@
+.order_info{
+    width: 50%;
+}
+.order_des{
+    width: 40%;
+}
+.CHECK{
+    align-items: flex-start;
+    margin: 7em auto;
+}

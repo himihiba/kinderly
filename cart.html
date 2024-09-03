@@ -9,100 +9,52 @@
     <!-- css style sheet -->
     <link rel="stylesheet" href="css/toggel.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/checkout.css">
-     
-     <!-- <link rel="stylesheet" href="css/main.css"> 
-     <link rel="stylesheet" href="css/header.css">
-     <link rel="stylesheet" href="css/globalRuls.css">
-     <link rel="stylesheet" href="css/footer.css"> -->
+    <link rel="stylesheet" href="css/cart.css">
     <!-- google font  -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
     </style>
 </head>
 <body>
     <!-- header -->
      <header class="header">
         <nav class="nav container flex">
-            <a href="category.html" class="backto">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-                continue shopping 
-            </a>
             <a href="index.html" class="logo">Kinderly</a>
+            <div class="search__bar">
+                <input type="search" placeholder="Search">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <input type="checkbox" class="input__toggel" id="inputToggel">
+            <div class="nav__menu flex">
+                <ul class="nav__list flex">
+                    <li><a href="#" class="nav__link">Categories</a></li>
+                    <li><a href="#" class="nav__link">Deals</a></li>
+                    <li><a href="#" class="nav__link">News</a></li>
+                </ul>
+                <div class="nav__icon flex">
+                    <a href="checkout.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <div class="profile__image">
+                        <img src="img/profileImg.svg" alt="image" class="profile__img" width="40">
+                    </div>
+                </div>
+            </div>
+            <label for="inputToggel" class="nav__toggel">
+                <span class="navig_menu"></span>
+            </label>
         </nav>
      </header>
 
     <!-- main -->
      <main>
-        <div class="container flex CHECK">
-            <div class="order_info">
-                <p class="remark">
-                    <span class="ques">Can I cancel or change my order?</span>Due to our fully automated warehouse we are not able to cancel any orders, and no changes can be made once the order has been placed. Please make sure to enter the correct information in the checkout and double check the content of your order before you complete your purchase.
-                </p>
-                <form action="#" method="post" class="checkout-form">
-                    <fieldset>
-                        <legend>Delivery</legend>
-                        <div class="form-group">
-                            <label for="country">country/region*</label>
-                            <input type="text" id="country" name="country" required placeholder="select your country">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Full Name*</label>
-                            <input type="text" id="name" name="name" required placeholder="enter your name and last name">
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address</label>
-                            <input type="text" id="address" name="address" required placeholder="enter your adress">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone number*</label>
-                            <input type="text" id="phone" name="phone" required placeholder="enter your phone number">
-                        </div>
-                        <div class="formcheck">
-                            <input type="checkbox" id="approve">
-                            <label for="approve">save my info for the last shipping</label>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Payment</legend>
-                        <p class="pay">all transactions are secure and encrypted</p>
-                        <div class="choose">
-                            <button class="Ybutton">Credit card </button>
-                            <button class="Ybutton">Cash on delivery</button>
-                        </div>
-                        <div class="form-group">
-                            <label for="cardN">Card number*</label>
-                            <input type="number" id="cardN" name="card-number" required placeholder="enter your card number">
-                        </div>
-                        <div class="form-group">
-                            <label for="cardm">name on card*</label>
-                            <input type="text" id="cardm" name="card-name" required placeholder="enter name on card">
-                        </div>
-                        <div class="form-group">
-                            <label for="Edate">expiration date*</label>
-                            <input type="date" id="Edate" name="Exp-date" >
-                        </div>
-                        <div class="form-group">
-                            <label for="Edate">Cecurity code or CVV*</label>
-                            <input type="text" id="code" name="security-code" placeholder="CVV/CVC">
-                        </div>
-                        <div class="formcheck">
-                            <input type="checkbox" id="approvepay">
-                            <label for="approve">save my info for A faster checkout</label>
-                        </div>
-                        
-                    </fieldset>
-
-                    <a href="cart.html" class="Ybutton">Pay now</a>
-                </form>
-            </div>
-            <div class="order_des">
-                <h1 class="title">Your order</h1>
-                <div class="orderds">
+        <div class="container">
+            <h1 class="title">Your order</h1>
+            <div class="order_des flex">
+                    <div class="orderds">
                     <div class="order">
                         <ion-icon name="trash-outline"></ion-icon>
-                        <div class="flex">
+                        <div class="flex ord">
                             <div><img src="img/listgirl4.svg" alt=""></div>
                             <div>
                                 <h2>Dino surf swim shorts bleu</h2>
@@ -141,13 +93,9 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="copons">
-                        <p>Coupon code or gift card</p>
-                        <input type="text" placeholder="enter your coupon code">
-                        <button>apply</button>
-                    </div>
-                    <div class="total">
+                <div class="ord-inf">
+                    <div>
+                        <div class="total">
                         <div class="flex">
                             <span>subtotal</span>
                             <span>234$</span>
@@ -162,10 +110,16 @@
                         <span>total</span>
                         <span>234$</span>
                     </div>
+                    <P>Taxes and shipping calculated at chackout</P>
+                    </div>
+                    <div>
+                        <a href="" class="Ybutton">Checkout</a>
+                        <a href="category.html">Continus shopping</a>
+                    </div>
                 </div>
+            
             </div>
         </div>
-        
      </main>
 
 
