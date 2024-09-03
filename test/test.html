@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Rating System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Product Card (For Listing Page) -->
+    <div class="product-card">
+        <h3 class="product-name">Product Name</h3>
+        <p class="product-price">$49.99</p>
+        <!-- Rating Display -->
+        <div class="rating-display">
+            <span class="stars">⭐⭐⭐⭐</span>
+            <span class="average-rating">4.0</span> / 5
+            <span class="total-ratings">(10 ratings)</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- Product Detail Page (For Rating Input) -->
+    <div class="product-detail">
+        <h2>Rate This Product</h2>
+        <!-- Interactive Star Rating Input -->
+        <div class="rate-product">
+            <span class="star-input" data-value="1">⭐</span>
+            <span class="star-input" data-value="2">⭐</span>
+            <span class="star-input" data-value="3">⭐</span>
+            <span class="star-input" data-value="4">⭐</span>
+            <span class="star-input" data-value="5">⭐</span>
+        </div>
+        <button class="submit-rating">Submit Rating</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

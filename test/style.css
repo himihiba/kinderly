@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Product Card Styles */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: green;
+    font-weight: bold;
+}
+
+.rating-display {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: gold;
+}
+
+.stars {
+    color: gold;
+}
+
+/* Product Detail Page Styles */
+.product-detail {
+    margin: 20px;
+}
+
+.rate-product {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.star-input {
+    font-size: 2em;
+    cursor: pointer;
+    color: gray;
+    margin: 5px;
+}
+
+.star-input:hover,
+.star-input.selected {
+    color: gold;
+}
+
+.submit-rating {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-rating:hover {
+    background-color: #0056b3;
+}

@@ -2,15 +2,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    width: 50%;
     gap: .5em;
+}
+.sec1{
+    align-items: flex-start;
 }
 .img1 {
     grid-column: 1 / -1; 
     width: 100%; 
 }
 .img2,.img3{
-    max-height: 230px;
+    max-height: 120px;
     object-fit: cover;
 }
 .img2 {
@@ -24,4 +26,11 @@
 }
 .img2,.img3,.img1{
     border-radius: 12px;
+}
+.show_image{
+    width: 45%;
+    height: 100%;
+}
+.product__info{
+    width: 50%;
 }

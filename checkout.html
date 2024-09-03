@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinderly</title>
+    <!-- title icon -->
+     <link rel="shortcut icon" href="./img/title-img.jpg" type="image/x-icon">
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="css/toggel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/infinit-slide.css">
+     
+     <!-- <link rel="stylesheet" href="css/main.css"> 
+     <link rel="stylesheet" href="css/header.css">
+     <link rel="stylesheet" href="css/globalRuls.css">
+     <link rel="stylesheet" href="css/footer.css"> -->
+    <!-- google font  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+    </style>
+</head>
+<body>
+    <!-- header -->
+     <header class="header">
+        <nav class="nav container flex">
+            <a href="category.html" class="backto">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+                continue shopping 
+            </a>
+            <a href="index.html" class="logo">Kinderly</a>
+        </nav>
+     </header>
+
+    <!-- main -->
+     <main>
+        <div class="container flex">
+            <div class="order_info">
+                <p class="remark">
+                    <span class="ques">Can I cancel or change my order?</span>Due to our fully automated warehouse we are not able to cancel any orders, and no changes can be made once the order has been placed. Please make sure to enter the correct information in the checkout and double check the content of your order before you complete your purchase.
+                </p>
+                <form action="#" method="post" class="checkout-form">
+                    <fieldset>
+                        <legend>Delivery</legend>
+                        <div class="form-group">
+                            <label for="country">country/region*</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number*</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        <div class="formcheck">
+                            <input type="checkbox" id="approve">
+                            <label for="approve">save my info for the last shipping</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Payment</legend>
+                        <!-- Payment form fields -->
+                        <div class="form-group">
+                            <label for="card">Credit Card</label>
+                            <input type="text" id="card" name="card" required>
+                        </div>
+                        <!-- Add more fields as necessary -->
+                    </fieldset>
+
+                    <button type="submit" class="pay-button">Pay Now</button>
+                </form>
+            </div>
+            <div class="order_des"></div>
+        </div>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        
+
+        <!-- contact section -->
+        <!-- <section class="section">
+            <div class="container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                    <h2 class="contact__title">Join our community</h2>
+                    <p class="contact__par">sign up to our mailing list for hear about latest offres and new product</p>
+                    <div class="form">
+                        <input type="hidden" name="access_key" value="0c4ac524-43c0-4225-a91a-86c2c9ffa2c0">
+
+                        <input type="text"  name="email" placeholder="E-mail Adress" class="input__imail">
+                        <button type="submit" class="contact_buton Ybutton">SIGN UP</button>
+                    </div>
+                    <p class="contact__parag">By clicking sign up you agree to the kinderly@terms of use and privacy policy</p>
+                </form>
+            </div>
+        </section> -->
+
+     </main>
+
+
+    <!-- footer -->
+     <footer class="footer container">
+        <div class="site__content">
+            <div class="content">
+                <h2 class="content__title">kinderly</h2>
+                <p class="content__par">At kinderly, we believe that every child deserves to express their unique style with comfort and joy. Our carefully curated collection of playful and vibrant clothing is designed to move with them, whether they're exploring the great outdoors or attending a special event. With a focus on quality fabrics and cheerful patterns, we ensure that each piece is as durable as it is delightful, allowing kids to feel free and confident in every adventure.</p>
+            </div>
+            <div class="content">
+                <h2 class="content__title">Quick Links</h2>
+                <a href="#">ABOUT</a>
+                <a href="#">Process</a>
+                <a href="#">contact</a>
+                <a href="#">Services</a>
+                <a href="#">Experience</a>
+                <a href="#">privacy policy</a>
+            </div>
+            <div class="content">
+                <h2 class="content__title">company info</h2>
+                <a href="#">Terms of Use</a>
+                <a href="#">Promotions & Offers</a>
+                <a href="#">Find Store Location</a>
+                <a href="#">Accessibility</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="content">
+                <p class="number">Call 1-878-876-9879</p>
+                <p class="content__par">For inquiries and support</p>
+            </div>
+        </div>
+        <div class="site__right">
+            <p class="rights">© 2024 Little Sprouts. All rights reserved. Website developed by Himi Hiba
+            <ion-icon name="logo-github"></ion-icon>,
+            Front-End Developer. UI/UX design by [Designer’s Name].</p>
+            <div class="social__icons">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </div>
+        </div>
+     </footer>
+
+     <!-- ionicons -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
