@@ -1,0 +1,134 @@
+/* ************
+    global variable
+************ */
+
+:root{
+    --header-height: 3.5rem;
+    /* colors */
+    ---main-yellow:hsla(33, 88%, 56%, 1);
+    --yellow-light:hsla(33, 91%, 96%, 1);
+    --yellow-hover:hsla(33, 91%, 73%, 1);
+    --blue-dark:hsla(189, 24%, 17%, 1);
+    --blue-dark-lighter:hsla(187, 24%, 29%, 1);
+    --blue-normal:hsla(187, 24%, 49%, 1);
+    --blue-light:hsla(186, 23%, 84%, 1);
+    --text-color:hsla(187, 100%, 8%, 1);
+    --green:hsla(101, 54%, 55%, 1);
+    --grey:hsla(180, 2%, 42%, 1);
+    --grey-dark:hsla(0, 0%, 20%, 1);
+    --dark:hsla(0, 0%, 0%, 1);
+    --white:hsla(40, 60%, 99%, 1);
+    --shadow: hsla(0, 0%, 0%, 0.25);
+    --shadow-img:drop-shadow(0 8px 24px hsla(22, 100%, 8%, .2));;
+    /* weight */
+    --regular:400;
+    --semi-bold:600;
+    --bold:700;
+    /* font size */
+    --bigest-font:  2,0625rem;
+    --title-font: 1,75rem;
+    --normal-font-size: 0,875rem;
+    --subtitle-font:1,125rem;
+    --smalest-font: 0,625rem;
+}
+/* end variable */
+
+/* responsive typography */
+@media  screen and (min-width: 1150px){
+    :root{
+        --bigest-font: 2.75rem;
+        --title-font: 2.1875rem;
+        --normal-font-size: 1.125rem;
+        --subtitle-font: 1.5rem;
+        --smalest-font: 0.875rem;
+    }
+}
+
+/* global ruls */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+body{
+    background-color: var(--body-color);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    min-height: 100vh;
+    width: 100vw;
+    font-weight: var(--regular);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4{
+    font-weight: var(--bold);
+    color: var(--text-color);
+    font-size: var(--title-font);
+}
+
+/* ************
+    REUSABLE CSS CLASSES
+************ */
+
+.container{
+    max-width: 1150px;
+    width: 90%;
+    margin: 0rem auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.section {
+    padding-block: 5rem 0;
+    width: 100%;
+}
+.section__title {
+    text-align: center;
+    font-size: var(--title-font);
+    margin-bottom: 2rem;
+    font-weight: var(--bold);
+}
+.Ybutton{
+    font-size: var(--normal-font-size);
+    background-color: var(---main-yellow);
+    color: var(--white);
+    border-radius: .5em;
+    padding: .5em;
+    text-align: center;
+    display:block;
+}
+.button{
+    border-radius: 2.5em;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--yellow-light);
+}

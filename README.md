@@ -5,3 +5,8 @@
  --product page  done ✔
  --payment page  done ✔
  --cart page  done ✔
+-**CSS Styling** : 
+ --header done ✔
+ --footer done ✔
+ --home: 
+    -hero section done ✔ -selection section done ✔

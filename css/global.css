@@ -79,7 +79,7 @@ img {
     height: auto;
 }
 
-.main {
+main{
     overflow: hidden;
 }
 
@@ -132,52 +132,3 @@ h1, h2, h3, h4{
     padding: 1em;
     background-color: var(--yellow-light);
 }
-/* header */
-.nav__menu{
-    flex-direction: column-reverse;
-}
-@media screen and (min-width:1150px){
-    .nav__menu{
-        flex-direction: row;
-    }
-}
-
-
-/* hero section */
-
-
-/* quick selection section */
-
-.selection__card{
-    flex-direction: column;
-}
-@media screen and (min-width:1150px){
-    .selection__card{
-        flex-direction: row;
-    }
-}
-
-/*  new arival section  */
-
-
-/* promotion section */
-.promotion{
-    background-image: url(../img/sectionbackground.svg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    height: 400px;
-}
-
-/* brands section */
-
-
-/* news section */
-
-
-/* client section */
-
-
-/* contact section */
-
-
-/* footer */

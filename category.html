@@ -7,8 +7,10 @@
     <!-- title icon -->
      <link rel="shortcut icon" href="./img/title-img.jpg" type="image/x-icon">
     <!-- css style sheet -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/toggel.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/category.css">
     <!-- google font  -->
     <style>
@@ -18,26 +20,27 @@
 </head>
 <body>
     <!-- header -->
-     <header class="header">
+    <header class="header">
         <nav class="nav container flex">
-            <a href="index.html" class="logo">Kinderly</a>
-            <div class="search__bar">
-                <input type="search" placeholder="Search">
-                <ion-icon name="search-outline"></ion-icon>
+            <a href="index.html" class="logo flex">Kinderly</a>
+            <div class="search__bar flex">
+                <input type="search" placeholder="Search" class="serch">
+                <ion-icon name="search-outline" class="search-icon"></ion-icon>
             </div>
             <input type="checkbox" class="input__toggel" id="inputToggel">
             <div class="nav__menu flex">
                 <ul class="nav__list flex">
-                    <li><a href="#" class="nav__link">Categories</a></li>
-                    <li><a href="#" class="nav__link">Deals</a></li>
-                    <li><a href="#" class="nav__link">News</a></li>
+                    <li><a href="category.html" class="nav__link">Categories</a></li>
+                    <li><a href="#deal" class="nav__link">Deals</a></li>
+                    <li><a href="#news" class="nav__link">News</a></li>
                 </ul>
-                <div class="nav__icon flex">
-                    <a href="checkout.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <div class="profile__image">
-                        <img src="img/profileImg.svg" alt="image" class="profile__img" width="40">
-                    </div>
+            </div>
+            
+            <div class="nav__icon flex">
+                <a href="checkout.html" class="flex" ><ion-icon name="bag-handle-outline"></ion-icon></a>
+                <ion-icon name="heart-outline"></ion-icon>
+                <div class="profile__image flex">
+                    <img src="img/profileImg.svg" alt="image" class="profile__img" width="40">
                 </div>
             </div>
             <label for="inputToggel" class="nav__toggel">
@@ -419,46 +422,58 @@
 
 
     <!-- footer -->
-     <footer class="footer container">
-        <div class="site__content">
-            <div class="content">
-                <h2 class="content__title">kinderly</h2>
-                <p class="content__par">At kinderly, we believe that every child deserves to express their unique style with comfort and joy. Our carefully curated collection of playful and vibrant clothing is designed to move with them, whether they're exploring the great outdoors or attending a special event. With a focus on quality fabrics and cheerful patterns, we ensure that each piece is as durable as it is delightful, allowing kids to feel free and confident in every adventure.</p>
-            </div>
-            <div class="content">
-                <h2 class="content__title">Quick Links</h2>
-                <a href="#">ABOUT</a>
-                <a href="#">Process</a>
-                <a href="#">contact</a>
-                <a href="#">Services</a>
-                <a href="#">Experience</a>
-                <a href="#">privacy policy</a>
-            </div>
-            <div class="content">
-                <h2 class="content__title">company info</h2>
-                <a href="#">Terms of Use</a>
-                <a href="#">Promotions & Offers</a>
-                <a href="#">Find Store Location</a>
-                <a href="#">Accessibility</a>
-                <a href="#">FAQ</a>
-            </div>
-            <div class="content">
-                <p class="number">Call 1-878-876-9879</p>
-                <p class="content__par">For inquiries and support</p>
-            </div>
+    <footer class="footer">
+        <div class="container footer flex">
+          <div class="site__content">
+              <div class="content">
+                  <h2 class="content__title">kinderly</h2>
+                  <p class="content__par">At kinderly, we believe that every child deserves to express their unique style with comfort and joy. Our carefully curated collection of playful and vibrant clothing is designed to move with them, whether they're exploring the great outdoors or attending a special event. With a focus on quality fabrics and cheerful patterns, we ensure that each piece is as durable as it is delightful, allowing kids to feel free and confident in every adventure.</p>
+              </div>
+              <div class="content">
+                  <h2 class="content__title">Quick Links</h2>
+                  <div class="content__links flex">
+                   <a href="#">ABOUT</a>
+                  <a href="#">Process</a>
+                  <a href="#">contact</a>
+                  <a href="#">Services</a>
+                  <a href="#">Experience</a>
+                  <a href="#">privacy policy</a>   
+                  </div>
+                  
+              </div>
+              <div class="content">
+                  <h2 class="content__title">company info</h2>
+                  <div class="content__links flex">
+                  <a href="#">Terms of Use</a>
+                  <a href="#">Promotions & Offers</a>
+                  <a href="#">Find Store Location</a>
+                  <a href="#">Accessibility</a>
+                  <a href="#">FAQ</a>
+                  </div>
+                  
+              </div>
+              <div class="content">
+                  <h2 class="content__title">Contact</h2>
+                  <p class="number">Call 1-878-876-9879</p>
+                  <p class="content__par">For inquiries and support</p>
+              </div>
+          </div>
+          <div class="site__right flex">
+              <p class="rights">© 2024 Little Sprouts. All rights reserved. Website developed by Himi Hiba
+              <ion-icon name="logo-github"></ion-icon>,
+              Front-End Developer. UI/UX design by [Designer’s Name].</p>
+              <div class="social__icons">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <ion-icon name="logo-facebook"></ion-icon>
+                  <ion-icon name="logo-tiktok"></ion-icon>
+              </div>
+          </div>
         </div>
-        <div class="site__right">
-            <p class="rights">© 2024 Little Sprouts. All rights reserved. Website developed by Himi Hiba
-            <ion-icon name="logo-github"></ion-icon>,
-            Front-End Developer. UI/UX design by [Designer’s Name].</p>
-            <div class="social__icons">
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-tiktok"></ion-icon>
-            </div>
-        </div>
-     </footer>
+    </footer>
 
+
+     <!-- main js -->
+     <script src="script.js"></script>   
      <!-- ionicons -->
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

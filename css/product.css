@@ -34,3 +34,6 @@
 .product__info{
     width: 50%;
 }
+.product__vieux{
+    align-items: flex-start;
+}

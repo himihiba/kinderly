@@ -1,0 +1,311 @@
+/* ************
+    global variable
+************ */
+
+:root{
+    --header-height: 3.5rem;
+    /* colors */
+    ---main-yellow:hsla(33, 88%, 56%, 1);
+    --yellow-light:hsla(33, 91%, 96%, 1);
+    --yellow-hover:hsla(33, 91%, 73%, 1);
+    --blue-dark:hsla(189, 24%, 17%, 1);
+    --blue-dark-lighter:hsla(187, 24%, 29%, 1);
+    --blue-normal:hsl(187, 24%, 49%);
+    --blue-light:hsl(186, 23%, 84%);
+    --text-color:hsla(187, 100%, 8%, 1);
+    --green:hsla(101, 54%, 55%, 1);
+    --grey:hsla(180, 2%, 42%, 1);
+    --grey-dark:hsla(0, 0%, 20%, 1);
+    --dark:hsla(0, 0%, 0%, 1);
+    --white:hsl(40, 60%, 99%);
+    --shadow: hsla(0, 0%, 0%, 0.25);
+    --shadow-img:drop-shadow(0 8px 24px hsla(22, 100%, 8%, .2));;
+    /* weight */
+    --regular:400;
+    --semi-bold:600;
+    --bold:700;
+    /* font size */
+    --bigest-font: 1.45rem;
+    --title-font: 1 ,05rem;
+    --normal-font-size: 0,875rem;
+    --subtitle-font:1,125rem;
+    --smalest-font: 0,625rem;
+}
+/* end variable */
+/* responsive typography */
+@media  screen and (min-width: 1150px){
+    :root{
+        --bigest-font: 2.25rem;
+        --title-font: 1.5875rem;
+        --normal-font-size: 1.125rem;
+        --subtitle-font: 1.5rem;
+        --smalest-font: 0.875rem;
+    }
+}
+
+.section__title {
+    text-align: center;
+    font-size: var(--bigest-font);
+    margin-bottom: .2em;
+    font-weight: var(--bold);
+}
+/* hero section */
+.home__container{
+    flex-direction: column;
+    position: relative;
+}
+.hero__text{
+    position: relative;
+}
+.home__title{
+    font-size: var(--bigest-font);
+    line-height: 1.6em;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: var(--bold);
+    color: var(--blue-dark) ;
+}
+.heroTitle{
+    position: relative;
+}
+
+.vector img{
+    max-width: unset;
+    width: 6em;
+}
+.vector{
+    position: absolute;
+    width: 14%;
+    top: -2px;
+    left: -16px;
+}
+.des{
+    margin-bottom: 2.5rem;
+    font-size: var(--smalest-font);
+    line-height: 1.75rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    color: var(--blue-dark-hover);
+}
+.hero__text{
+    width: 70%;
+    margin: 0 auto;
+}
+/* button */
+.hero__button{
+    width: 60%;
+    margin: 0 auto;
+    color: #FEFDFB;
+    font-weight: var(--bold);
+    font-size: var(--smalest-font);
+    line-height: 36px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.hero__button::after {
+    content: '';
+    background-color: var(--blue-light);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    transition: width 500ms ease-out, height 500ms ease-out;
+    z-index: -1;
+}
+
+.hero__button:hover::after {
+    width: 600px; 
+    height: 600px; 
+    color: var(--blue-dark);
+}
+.hero__button span {
+    position: relative;
+    z-index: 2; 
+    transition: color 500ms ease-out; 
+    font-size: var(--normal-font-size);
+}
+
+.hero__button:hover span {
+    color: var(--blue-dark); 
+}
+@media screen and (min-width:1150px){
+    .hero__button{
+        width: 70%;
+    }
+    .hero__des{
+        width: 40%;
+    }
+    .home__container{
+        flex-direction: row-reverse;
+        gap: 2em;
+    }
+    .home__container img{
+        width: 55%;
+    }
+    .vector img{
+        max-width: unset;
+        width: 7.5em;
+    }
+    .vector{
+        position: absolute;
+        top: -4px;
+        left: -18px;
+    }
+}
+/* quick selection section */
+
+.selection__data{
+    text-align: center;
+}
+.sel{
+    position: relative;
+}
+.sel::before{
+    content: '';
+    position: absolute;
+    width: 8em;
+    height: 1px;
+    background-color: var(--blue-light);
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    margin-bottom: -.2em ;
+}
+.selection__description{
+    font-weight: var(--bold);
+    font-size: var(--subtitle-font);
+    line-height: 36px;
+    color: var(--grey);
+    margin-bottom: 3em;
+}
+
+.selection__card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 5em;
+}
+@media screen and (min-width: 768px) {
+    .selection__card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.girl__collection, .boy__collection{
+    position: relative;
+    border-radius: 25px;
+    display: flex;
+    width: 270px;
+}
+.girl__collection{
+    background-color: hsla(33, 88%, 86%, 1) ;
+}
+.boy__collection{
+    background-color: hsla(186, 23%, 84%, 1);
+}
+.selec__data{
+    padding: 1.5em;
+    width: 60%;
+    gap: 0.1em;
+    overflow: visible;
+}
+.collection__title{
+    font-weight: var(--bold);
+    font-size: var(--bigest-font);
+    line-height: 3rem;
+    color: var(--text-color);
+}
+    
+.collection_par{
+    font-weight: var(--regular);
+    color: var(--text-color);
+    font-size: var(--smalest-font);
+    margin-bottom: .8em;
+}
+.girl{
+    color: var(--blue-normal);
+}
+.boy{
+    color: var(--yellow-normall);
+}
+
+.selection__button{
+    background-color: hsla(33, 91%, 96%, 1);
+    padding: .5em 1em;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+    transition: background-color 0.7s ease-in-out;
+}
+.selection__button:hover{
+    background-color: var(--yellow-hover);
+}
+.selection__button > span {
+    font-size: var(--smalest-font);
+    color: var(--grey-dark);
+    font-weight: var(--bold);
+}
+.selectionG__img{
+    width: 60%;
+    position: absolute;
+    right: -15px;
+    top: -30px;
+}
+.selectionB__img{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: -15px;
+
+}
+
+@media screen and (min-width:1150px){
+    .girl__collection, .boy__collection{
+        width: 350px;
+    }
+    .selectionG__img{
+        width: 50%;
+        position: absolute;
+        right: -15px;
+        top: -30px;
+    }
+    .selectionB__img{
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: -15px;
+    
+    }
+}
+
+/*  new arival section  */
+
+
+/* promotion section */
+.promotion{
+    background-image: url(../img/sectionbackground.svg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 400px;
+}
+
+/* brands section */
+
+
+/* news section */
+
+
+/* client section */
+
+
+/* contact section */
+
+
+/* footer */

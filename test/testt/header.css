@@ -1,0 +1,111 @@
+/* ************
+    global variable
+************ */
+
+:root{
+    --header-height: 3.5rem;
+    /* colors */
+    ---main-yellow:hsla(33, 88%, 56%, 1);
+    --yellow-light:hsla(33, 91%, 96%, 1);
+    --yellow-hover:hsla(33, 91%, 73%, 1);
+    --blue-dark:hsla(189, 24%, 17%, 1);
+    --blue-dark-lighter:hsla(187, 24%, 29%, 1);
+    --blue-normal:hsl(187, 24%, 49%);
+    --blue-light:hsl(186, 23%, 84%);
+    --text-color:hsla(187, 100%, 8%, 1);
+    --green:hsla(101, 54%, 55%, 1);
+    --grey:hsla(180, 2%, 42%, 1);
+    --grey-dark:hsla(0, 0%, 20%, 1);
+    --dark:hsla(0, 0%, 0%, 1);
+    --white:hsl(40, 60%, 99%);
+    --shadow: hsla(0, 0%, 0%, 0.25);
+    --shadow-img:drop-shadow(0 8px 24px hsla(22, 100%, 8%, .2));;
+    /* weight */
+    --regular:400;
+    --semi-bold:600;
+    --bold:700;
+    /* font size */
+    --bigest-font:  2,0625rem;
+    --title-font: 1 ,05rem;
+    --normal-font-size: 0,875rem;
+    --subtitle-font:1,125rem;
+    --smalest-font: 0,625rem;
+}
+/* end variable */
+/* responsive typography */
+@media  screen and (min-width: 1150px){
+    :root{
+        --bigest-font: 2.75rem;
+        --title-font: 2.0875rem;
+        --normal-font-size: 1.125rem;
+        --subtitle-font: 1.5rem;
+        --smalest-font: 0.875rem;
+    }
+}
+/* header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: box-shadow 0.4s;
+}
+.nav{
+    height: var(--header-height);
+    position: relative;
+}
+.logo{
+    text-align: center;
+    font-size: var(--title-font);
+    color: var(---main-yellow);
+    font-weight: var(--bold);
+    flex: 0 1 auto;
+}
+.search__bar{
+    justify-content: unset;
+    flex: 1;
+    margin: 0 3em;
+}
+.serch,.search-icon{
+    border: 1px solid var(--blue-light);
+    font-size: .7em;
+}
+.serch{
+    flex: 1;
+    border-right: none;
+    text-indent: .7em;
+    font-weight: var(--regular);
+    border-radius: 10px 0 0 10px;
+    background-color: transparent;
+    padding: .3em 0;
+}
+.search-icon{
+    padding-right: .7em;
+    height: 24px;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    
+}
+.serch:focus{
+    border: 1px solid var(--blue-light);
+    outline: none;
+    border-right: none;
+}
+.nav__menu{
+    flex-direction: column-reverse;
+}
+@media screen and (min-width:1150px){
+    .logo{
+        order: 1;
+    }
+    .search__bar{
+        order: 3;
+    }
+    .nav__menu{
+        order: 2;
+    }
+    .nav__icon{
+        order: 4;
+    }
+}

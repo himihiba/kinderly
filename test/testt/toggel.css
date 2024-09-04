@@ -31,11 +31,8 @@
   
   /* nav drop */
   
-  .input__toggel:checked~  .nav__menu{
-    top:8rem;
-  }
-  .input__toggel:checked~  .nav__icon{
-    top: 5rem;
+  .input__toggel:checked~  .nav__menu,.input__toggel:checked~  .nav__icon{
+    top:10em;
   }
   .input__toggel:checked~ label span::after{
     display: none;
@@ -65,7 +62,7 @@
       display: block;
     }
     .nav__list{
-      /* flex-direction: column; */
+      flex-direction: column;
       gap: 2em;
       width: 100%;
       padding: 2em 0;
