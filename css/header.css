@@ -53,7 +53,7 @@
 }
 .nav{
     height: var(--header-height);
-    position: relative;
+    position: relative ;
 }
 
 .logo{

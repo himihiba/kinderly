@@ -111,13 +111,13 @@ button{
     justify-content: space-between;
     align-items: center;
 }
-.grid{
+/* .grid{
     display: grid;
     gap: 1.5rem;
-}
+} */
 .section {
     padding-block: 5rem 0;
-    width: 100%;
+    width: 90%;
 }
 .section__title {
     text-align: center;

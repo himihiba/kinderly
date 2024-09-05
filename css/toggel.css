@@ -57,7 +57,7 @@
     .nav__menu,.nav__icon{
       position: fixed;
       top: -200%;
-      width: 90%;
+      width: 80%;
       text-align: center;
       transition: top 0.7s ease;
     }
@@ -67,7 +67,7 @@
     .nav__list{
       /* flex-direction: column; */
       gap: 2em;
-      width: 100%;
+      width: 90%;
       padding: 2em 0;
     }
   }

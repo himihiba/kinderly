@@ -130,8 +130,8 @@
 }
 
 .hero__button:hover::after {
-    width: 600px; 
-    height: 600px; 
+    width: 300px; 
+    height: 300px; 
     color: var(--blue-dark);
 }
 .hero__button span {
@@ -146,14 +146,16 @@
 }
 @media screen and (min-width:768px){
     .hero__text{
-        width: 90%;
+        width: 80%;
+
     }
     /* button */
     .hero__button{
         width: 70%;
     }
-    .home__container img{
-        width: 65%;
+    .home__container >img{
+        width: 55%;
+        margin: 0 auto ;
     }
     .vector img{
         max-width: unset;
@@ -187,6 +189,7 @@
     }
     .home__container >img{
         width: 55%;
+        margin: 0 auto;
     }
 }
 /* quick selection section */
@@ -219,7 +222,7 @@
 .selection__card{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     gap: 5em;
 }
@@ -304,7 +307,8 @@
         display: none;
     }
     .selec__data{
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         padding: 1.5em;
     }
     .selection__button{
@@ -351,7 +355,6 @@
     gap: 1rem;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 0 .5em;
 }
 
 .card__wraper::-webkit-scrollbar{
@@ -452,118 +455,10 @@
     }
 }
 
-/* promotion section */
-.promotion{
-    background-image: url(../img/sectionbackground.svg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    height: 300px;
-    position: relative;
-}
-.deal__dtai{
-    max-width: 40%;
-    position: absolute;
-    right: 2em;
-    top: 50%;
-    transform: translatey(-50%);
-}
-.codebutton{
-    display: inline-flex;
-    font-size: var(--smalest-font);
-    font-weight: var(--bold);
-    text-align: center;
-    color: hsla(40, 60%, 99%, 1);
-    border: 1px solid hsla(40, 60%, 99%, 1);
-}
-.deal__desc{
-    color: var(--text-color);
-    font-weight: var(--bold);
-    font-size: var(--subtitle-font);
-    padding-bottom: .6em;
-}
-@media screen and (min-width:1150px){
-    .promotion{
-        height: 400px;
-    }
-    .deal__dtai{
-        right: 10em;
-    }
-}
-
-/* news section */
-
-.cons__description{
-    width: 45%;
-    padding: 1em;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
-    max-width: 350px;
-}
-.cons__title{
-    font-size: 2.3rem;
-    font-weight: var(--bold);
-    color: var(--text-color);
-    margin-bottom: .2em;
-    text-align: start;
-}
-.cons__para{
-    font-weight: var(--regular);
-    font-size: 1.6rem;
-    color: var(--blue-dark);
-    margin-bottom: 1em;
-}
-.cons__buuton{
-    display: inline-flex;
-    text-align: center;
-    color: hsla(40, 60%, 99%, 1);
-    font-size: 1rem;
-    font-weight: var(--bold);
-    border-radius: .6rem;
-}
-.newsContainer{
-    background-image: linear-gradient(rgba(255, 251, 251, 0.288), rgba(255, 255, 255, 0.514)), 
-        url(../img/sectcion2Img.svg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    height: 400px;
-    justify-content: center;
-}
-@media screen and (max-width:768px) {
-    .cons__title{
-        font-size: 1.2rem;
-    }
-    .cons__para{
-        font-size: .9rem;
-    }
-    .cons__buuton{
-        font-size: .7rem;
-    }
-    .newsContainer{
-        height: 250px;
-    }
-}
-@media screen and (max-width:330px){
-    .cons__title{
-        font-size: 1rem;
-    }
-    .cons__para{
-        font-size: .7rem;
-    }
-    .cons__buuton{
-        font-size: .6rem;
-    }
-    .newsContainer{
-        height: 250px;
-    }
-    .cons__description{
-        width: auto;
-    }
-}
-/* client section */
-
-
 /* contact section */
 
+.contact{
+    max-width: 200px;
+}
 
 /* footer */
