@@ -67,6 +67,7 @@
     justify-content: unset;
     flex: 1;
     margin: 0 1rem;
+    max-width: 300px;
 }
 .serch,.search-icon{
     border: 1px solid var(--blue-light);
@@ -113,12 +114,12 @@
 .nav__icon,.nav__list{
     justify-content: center;
 }
-.nav__icon *{
+.nav__icon >*{
     margin-left: 1em;
 }
-.nav__icon a ion-icon{
+/* .nav__icon a ion-icon{
    margin:0;
-}
+} */
 .nav__icon ion-icon{
    font-size: var(--bigest-font);
    color: var(--blue-dark);

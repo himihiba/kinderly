@@ -71,6 +71,7 @@ ul {
 a {
     text-decoration: none;
     background-color: transparent;
+    color: var(--text-color);
 }
   
 img {
@@ -89,6 +90,13 @@ h1, h2, h3, h4{
     font-size: var(--title-font);
 }
 
+ion-icon{
+    cursor: pointer;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
 /* ************
     REUSABLE CSS CLASSES
 ************ */
@@ -131,4 +139,7 @@ h1, h2, h3, h4{
     text-align: center;
     padding: 1em;
     background-color: var(--yellow-light);
+}
+a > ion-icon{
+    margin:0;
 }
