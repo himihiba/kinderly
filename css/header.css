@@ -66,7 +66,7 @@
 .search__bar{
     justify-content: unset;
     flex: 1;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 .serch,.search-icon{
     border: 1px solid var(--blue-light);
