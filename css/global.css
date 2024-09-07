@@ -117,7 +117,7 @@ button{
 } */
 .section {
     padding-block: 5rem 0;
-    width: 90%;
+    width: 100%;
 }
 .section__title {
     text-align: center;
