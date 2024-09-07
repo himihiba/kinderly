@@ -70,29 +70,29 @@
     max-width: 300px;
 }
 .serch,.search-icon{
-    border: 1px solid var(--blue-light);
     font-size: .7em;
 }
 .serch{
     flex: 1;
-    border-right: none;
+    border: 1px solid var(--blue-light);
+    /* border-right: none; */
     text-indent: .7em;
     font-weight: var(--regular);
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px ;
     background-color: transparent;
     padding: .3em 0;
 }
 .search-icon{
-    padding-right: .7em;
+    /* padding-right: .7em;
     height: 24px;
     border-left: none;
-    border-radius: 0 10px 10px 0;
-    
+    border-radius: 0 10px 10px 0; */
+    margin-left: -2em;
 }
 .serch:focus{
     border: 1px solid var(--blue-light);
     outline: none;
-    border-right: none;
+    /* border-right: none; */
 }
 .nav__menu{
     flex-direction: column-reverse;

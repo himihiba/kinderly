@@ -46,7 +46,7 @@
 
 footer{
     width: 100%;
-    padding: 2em 0;
+    padding: 1em 0;
     background-color: var(--blue-light);
     margin-top: 4rem;
 }
@@ -55,9 +55,9 @@ footer{
 }
 .site__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px , 1fr));
     margin-bottom: 3em;
-    gap: 1em;
+    gap: 30px;
 }
 .site__right{
     flex-direction: column;
