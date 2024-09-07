@@ -244,7 +244,7 @@
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
-    gap: 5em;
+    gap: 6.5em;
 }
 @media screen and (min-width: 768px) {
     .selection__card{
@@ -274,7 +274,7 @@
 .collection__title{
     font-weight: var(--bold);
     font-size: var(--bigest-font);
-    line-height: 3rem;
+    line-height: 1.8rem;
     color: var(--text-color);
 }
     
@@ -339,6 +339,9 @@
     }
 }
 @media screen and (min-width:1150px){
+    .collection__title{
+        line-height: 3rem;
+    }
     .girl__collection, .boy__collection{
         width: 350px;
     }
