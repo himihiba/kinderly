@@ -20,7 +20,7 @@
   .navig_menu::after,.navig_menu::before{
     content: '';
     position: absolute;
-    transition: rotate 500ms ease ;
+    /* transition: rotate 500ms ease ; */
   }
   .navig_menu::after{
     bottom: 7px;
@@ -44,9 +44,9 @@
     top: 0;
     rotate: 90deg;
   }
-  label span{
+  /* label span{
     transition: rotate 500ms ease ;
-  }
+  } */
   .input__toggel:checked~ label span{
     rotate: 45deg;
   }

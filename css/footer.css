@@ -106,3 +106,6 @@ footer{
     font-weight: var(--regular);
     font-size: var(--smalest-font);
 }
+.content__links a:hover{
+    color: rgb(88, 43, 1);
+}

@@ -1,3 +1,97 @@
+/* ************
+    global variable
+************ */
+
+:root{
+    --header-height: 4.5rem;
+    /* colors */
+    ---main-yellow:hsla(33, 88%, 56%, 1);
+    --yellow-light:hsla(33, 91%, 96%, 1);
+    --yellow-hover:hsla(33, 91%, 73%, 1);
+    --blue-dark:hsla(189, 24%, 17%, 1);
+    --blue-dark-lighter:hsla(187, 24%, 29%, 1);
+    --blue-normal:hsla(187, 24%, 49%, 1);
+    --blue-light:hsla(186, 23%, 84%, 1);
+    --text-color:hsla(187, 100%, 8%, 1);
+    --green:hsla(101, 54%, 55%, 1);
+    --grey:hsla(180, 2%, 42%, 1);
+    --grey-dark:hsla(0, 0%, 20%, 1);
+    --dark:hsla(0, 0%, 0%, 1);
+    --white:hsla(40, 60%, 99%, 1);
+    --shadow: hsla(0, 0%, 0%, 0.25);
+    --shadow-img:drop-shadow(0 8px 24px hsla(22, 100%, 8%, .2));;
+    /* weight */
+    --regular:400;
+    --semi-bold:600;
+    --bold:700;
+    /* font size */
+    --bigest-font:  2,0625rem;
+    --title-font: 1,75rem;
+    --normal-font-size: 0,875rem;
+    --subtitle-font:1,125rem;
+    --smalest-font: 0,625rem;
+}
+/* end variable */
+
+/* responsive typography */
+@media  screen and (min-width: 1150px){
+    :root{
+        --bigest-font: 2.75rem;
+        --title-font: 2.1875rem;
+        --normal-font-size: 1.125rem;
+        --subtitle-font: 1.5rem;
+        --smalest-font: 0.875rem;
+    }
+}
+/* header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: box-shadow 0.4s;
+    background-color: #fff;
+    border-bottom: 1px solid hsla(0, 0%, 62%, 1);
+}
+.nav{
+    height: var(--header-height);
+    position: relative ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.backto{
+    color: #000;
+    gap: .5em;
+    position: relative;
+}
+.backto > ion-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    
+}
+.backto > span{
+    margin-left: 1.5em;
+}
+.backto:hover ion-icon{
+    animation: back .6s ease-in-out infinite;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsla(33, 88%, 56%, 1);
+}
+@keyframes back {
+    from{
+        left: 1%;
+    }to{
+        left: -2%;
+    }
+}
+/* main */
 .order_info{
     width: 50%;
 }

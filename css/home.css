@@ -51,6 +51,14 @@
         --smalest-font: 0.575rem;
     }
 }
+/* header */
+
+.nav__list li a{
+    margin-left: 3em;
+    font-size:var(--normal-font-size);
+}
+
+/* main */
 .section__title {
     text-align: center;
     font-size: var(--bigest-font);
@@ -351,6 +359,13 @@
 
 /*  new arival section  */
 
+.product__page{
+    transition: color .3s ease-in-out;
+}
+.product__page:hover{
+    color: #493938;
+    text-decoration: underline;
+}
 .new-arival{
     margin-bottom: 5em;
 }

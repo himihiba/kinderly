@@ -75,7 +75,6 @@
 .serch{
     flex: 1;
     border: 1px solid var(--blue-light);
-    /* border-right: none; */
     text-indent: .7em;
     font-weight: var(--regular);
     border-radius: 10px ;
@@ -83,16 +82,11 @@
     padding: .3em 0;
 }
 .search-icon{
-    /* padding-right: .7em;
-    height: 24px;
-    border-left: none;
-    border-radius: 0 10px 10px 0; */
     margin-left: -2em;
 }
 .serch:focus{
     border: 1px solid var(--blue-light);
     outline: none;
-    /* border-right: none; */
 }
 .nav__menu{
     flex-direction: column-reverse;
@@ -117,9 +111,6 @@
 .nav__icon >*{
     margin-left: 1em;
 }
-/* .nav__icon a ion-icon{
-   margin:0;
-} */
 .nav__icon ion-icon{
    font-size: var(--bigest-font);
    color: var(--blue-dark);
@@ -135,11 +126,38 @@
 .nav__menu{
     box-shadow: 0px 150px 160px 150px rgba(194, 183, 183, 0.158);
 }
+ion-icon,.nav__list li a{
+   transition: color .3s ease-out; 
+}
 .nav__list li a{
     margin-left: 1em;
+    
+    position: relative;
+}
+.nav__link:hover{
+    color: var(--yellow-hover);
+}
+.nav__link::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    left: 0;
+    top: 100%;
+    position: absolute;
+    background-color: var(---main-yellow);
+    transition: width .3s ease-out;
+}
+.nav__list:hover ::after{
+    width: 90%;
 }
 .nav__icon{
     padding-top: 1em;
+}
+ion-icon:hover{
+    color: var(---main-yellow);
+}
+.heart:hover{
+    color: rgba(255, 0, 0, 0.644);
 }
 @media screen and (min-width:1150px){
     .nav__icon ion-icon{
