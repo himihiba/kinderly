@@ -1,3 +1,13 @@
+/* header */
+
+.nav__list li a{
+    margin-left: 3em;
+    font-size:var(--normal-font-size);
+}
+/* main */
+main{
+    padding-block: 5rem 0;
+}
 .order_des,.ord{
     align-items: flex-start;
 }
