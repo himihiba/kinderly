@@ -146,12 +146,8 @@
 }
 @media screen and (min-width:768px){
     .hero__text{
-        width: 80%;
-
-    }
-    /* button */
-    .hero__button{
-        width: 70%;
+        width: 50%;
+        max-width: 600px;
     }
     .home__container >img{
         width: 55%;
@@ -166,17 +162,29 @@
         top: -4px;
         left: -10px;
     }
+    .selection__card {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .girl__collection, .boy__collection {
+        width: 45%; 
+        max-width: 350px;
+    }
 }
 @media screen and (min-width:1150px){
     .hero__button{
         width: 70%;
     }
-    .hero__des{
-        width: 40%;
+    .hero__text {
+        width: 65%;
     }
     .home__container{
         flex-direction: row-reverse;
         gap: 2em;
+        justify-content: space-between; 
+        align-items: center;
     }
     .vector img{
         max-width: unset;
@@ -188,8 +196,12 @@
         left: -18px;
     }
     .home__container >img{
-        width: 55%;
+        width: 45%;
         margin: 0 auto;
+    }
+    .product__card {
+        min-width: 250px;
+        max-width: 300px;
     }
 }
 /* quick selection section */
@@ -455,10 +467,132 @@
     }
 }
 
-/* contact section */
+/* OPINIONS section */
 
-.contact{
-    max-width: 200px;
+.opinion__card{
+    background-color: var(--blue-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color .3s ease-in-out;
+    min-width: 270px;
+}
+@media screen and (min-width:1150px){
+    .opinion__card{
+        min-width: 300px;
+    }
+}
+.opinion__card:hover{
+    background-color: hsla(187, 24%, 29%, 1);
+}
+.opinion__card:hover .opinion__name{
+    color: var(--grey-dark);
+}
+.opinion__card:hover .opinion__state{
+    color: rgb(190, 188, 188);
+}
+.opinion__card:hover .theOpinion{
+    color: rgb(255, 255, 255);
+}
+.opinion__image{
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+.opinion__name{
+    font-size: var(--subtitle-font);
+    font-weight: var(--regular);
+    line-height: 22.3px;
+    font-family:cursive;
+    color: var(--text-color);
+}
+.opinion__state{
+    color: hsla(180, 2%, 42%, 1);
+    font-weight: var(--regular);
+    font-size: var(--normal-font-size);
+    font-family:cursive;
+    padding-bottom: .8em;
+}
+.theOpinion{
+    font-size: var(--smalest-font);
+    font-weight: var(--regular);
+    color: var(--text-color);
+
+}
+.CL{
+    font-family:cursive;
+    margin-bottom: 3rem;
+
+}
+.ocard__wraper{
+    width: 85%;
 }
 
-/* footer */
+
+/* contact section */
+
+
+.contact{
+    width: 70%;
+    margin: 0 auto;
+    background-color: hsla(186, 33%, 78%, 1);
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+}
+@media screen and (min-width:768px) {
+    .contact{
+        width: 40%;
+    }
+}
+.contact__title{
+    font-size: var(--subtitle-font);
+    font-weight: var(--regular);
+    color: var(--text-color);
+}
+.contact__par{
+    font-size: var(--smalest-font);
+    font-weight: var(--regular);
+    color: hsla(180, 2%, 42%, 1);
+    line-height: 24px;
+    padding-bottom: 1.5em;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.input__imail{
+    width: 60%;
+    border: none;
+    padding: .75em;
+    border-radius: 10px;
+}
+.input__imail:focus{
+    outline: none;
+}
+.contact_buton{
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+    .contact_buton{
+        font-size: x-small;
+        padding: .5em .4em;
+    }
+    .input__imail{
+        padding: .5em;
+    }
+}
+.contact__parag{
+    text-align: left;
+    font-size: var(--smalest-font);
+    font-weight: var(--regular);
+    color: var(--blue-dark);
+    line-height: 18px;
+}

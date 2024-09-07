@@ -9,19 +9,9 @@
 
 
 -**CSS Styling** : 
+
  --header done ✔
 
  --footer done ✔
 
- --home: 
-    -hero section done ✔ 
-    
-    -selection section done ✔
-
-    -product slider section done ✔
-
-    -news section done ✔
-
-    -brands infinit slider section done ✔
-
-    -conseltation section done ✔
+ --home: done ✔ 

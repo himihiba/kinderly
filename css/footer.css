@@ -106,8 +106,3 @@ footer{
     font-weight: var(--regular);
     font-size: var(--smalest-font);
 }
-@media screen and (max-width: 330px) {
-    .site__content {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-}
