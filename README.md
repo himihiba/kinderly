@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo  
 
-[![Live Demo](https://himihiba.github.io/kinderly/)  
+[Live Demo](https://himihiba.github.io/kinderly/)  
 
 ## 📸 Screenshots  
 
