@@ -1,17 +1,13 @@
-## Redoing the ecommerce site
+## just one page completed
 
--**html structure** : 
- --home page done ✔
- --category page done ✔
- --product page  done ✔
- --payment page  done ✔
- --cart page  done ✔
+## 🚀 Live Demo  
 
+[![Live Demo](https://himihiba.github.io/kinderly/)  
 
--**CSS Styling** : 
+## 📸 Screenshots  
 
- --header done ✔
+### **Desktop Version**  
+![Kinderly Desktop](DesktopVersion.png)  
 
- --footer done ✔
-
- --home: done ✔ 
+### **Mobile Version**  
+![Kinderly Mobile](MobileVersion.png)  
