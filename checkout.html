@@ -3,169 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinderly</title>
-    <!-- title icon -->
+    <title>Kinderly - Checkout</title>
      <link rel="shortcut icon" href="./img/title-img.jpg" type="image/x-icon">
-    <!-- css style sheet -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/checkout.css">
-    <!-- google font  -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
 </head>
 <body>
-    <!-- header -->
      <header class="header">
-        <nav class="nav container ">
-            <a href="category.html" class="backto flex">
+        <nav class="nav">
+            <a href="category.html" class="backto">
                 <ion-icon name="arrow-back-outline"></ion-icon>
-                <span>continue shopping</span>
-                 
+                <span>Continue Shopping</span>
             </a>
             <a href="index.html" class="logo">Kinderly</a>
         </nav>
      </header>
 
-    <!-- main -->
      <main>
-        <div class="container flex CHECK">
-            <div class="order_info">
+        <div class="checkout-container">
+            <div class="checkout-left">
                 <p class="remark">
-                    <span class="ques">Can I cancel or change my order?</span>Due to our fully automated warehouse we are not able to cancel any orders, and no changes can be made once the order has been placed. Please make sure to enter the correct information in the checkout and double check the content of your order before you complete your purchase.
+                    <span class="ques">Can I Cancel Or Change My Order?</span>
+                    Due To Our Fully Automated Warehouse We Are Not Able To Cancel Any Orders, And No Changes Can Be Made Once The Order Has Been Placed. Please Make Sure To Enter The Correct Information In The Checkout And Double Check The Content Of Your Order Before You Complete Your Purchase.
                 </p>
+                
                 <form action="#" method="post" class="checkout-form">
                     <fieldset>
                         <legend>Delivery</legend>
                         <div class="form-group">
-                            <label for="country">country/region*</label>
-                            <input type="text" id="country" name="country" required placeholder="select your country">
+                            <label for="country">Country/Region*</label>
+                            <input type="text" id="country" name="country" required placeholder="Select Your Country">
                         </div>
                         <div class="form-group">
                             <label for="name">Full Name*</label>
-                            <input type="text" id="name" name="name" required placeholder="enter your name and last name">
+                            <input type="text" id="name" name="name" required placeholder="Enter Your Name And Last Name">
                         </div>
                         <div class="form-group">
-                            <label for="address">Address</label>
-                            <input type="text" id="address" name="address" required placeholder="enter your adress">
+                            <label for="address">Address*</label>
+                            <input type="text" id="address" name="address" required placeholder="Enter Your Address">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone number*</label>
-                            <input type="text" id="phone" name="phone" required placeholder="enter your phone number">
+                            <label for="phone">Phone Number*</label>
+                            <input type="text" id="phone" name="phone" required placeholder="Enter Your Phone Number">
                         </div>
                         <div class="formcheck">
-                            <input type="checkbox" id="approve">
-                            <label for="approve">save my info for the last shipping</label>
+                            <input type="checkbox" id="save-shipping">
+                            <label for="save-shipping">Save My Info For The Last Shipping</label>
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Payment</legend>
-                        <p class="pay">all transactions are secure and encrypted</p>
-                        <div class="choose">
-                            <button class="Ybutton">Credit card </button>
-                            <button class="Ybutton">Cash on delivery</button>
-                        </div>
-                        <div class="form-group">
-                            <label for="cardN">Card number*</label>
-                            <input type="number" id="cardN" name="card-number" required placeholder="enter your card number">
-                        </div>
-                        <div class="form-group">
-                            <label for="cardm">name on card*</label>
-                            <input type="text" id="cardm" name="card-name" required placeholder="enter name on card">
-                        </div>
-                        <div class="form-group">
-                            <label for="Edate">expiration date*</label>
-                            <input type="date" id="Edate" name="Exp-date" >
-                        </div>
-                        <div class="form-group">
-                            <label for="Edate">Cecurity code or CVV*</label>
-                            <input type="text" id="code" name="security-code" placeholder="CVV/CVC">
-                        </div>
-                        <div class="formcheck">
-                            <input type="checkbox" id="approvepay">
-                            <label for="approve">save my info for A faster checkout</label>
+                        <p class="secure-text">All Transactions Are Secure And Encrypted</p>
+                        
+                        <div class="payment-toggle">
+                            <button type="button" class="toggle-btn active" id="btn-card">Credit Card</button>
+                            <button type="button" class="toggle-btn" id="btn-cod">Cash On Delivery</button>
                         </div>
                         
+                        <div id="card-fields">
+                            <div class="form-group">
+                                <label for="card-number">Card Number*</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="Enter Your Card Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="card-name">Name On Card*</label>
+                                <input type="text" id="card-name" name="card-name" placeholder="Enter Name On Card">
+                            </div>
+                            <div class="form-group">
+                                <label for="exp-date">Expiration Date*</label>
+                                <input type="text" id="exp-date" name="exp-date" placeholder="Mm/YYYY">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">Security Code Or CVV*</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="CVV/CVC">
+                            </div>
+                        </div>
+                        
+                        <div class="formcheck">
+                            <input type="checkbox" id="save-payment">
+                            <label for="save-payment">Save My Info For A Faster Checkout</label>
+                        </div>
                     </fieldset>
 
-                    <a href="cart.html" class="Ybutton">Pay now</a>
+                    <button type="submit" class="pay-btn">Pay Now</button>
                 </form>
             </div>
-            <div class="order_des">
-                <h1 class="title">Your order</h1>
-                <div class="orderds">
-                    <div class="order">
-                        <ion-icon name="trash-outline"></ion-icon>
-                        <div class="flex">
-                            <div><img src="img/listgirl4.svg" alt=""></div>
-                            <div>
-                                <h2>Dino surf swim shorts bleu</h2>
-                                <p>CHICCO</p>
-                                <p>3-6</p>
-                                <div class="flex">
-                                    <span>123 $</span>
-                                    <div class="quantity_detr">
-                                        <button class="remove">-</button>
-                                        <span>1</span>
-                                        <button class="add">+</button>
-                                    </div>
+            
+            <div class="checkout-right">
+                <h2 class="section-title">Your Order</h2>
+                
+                <div class="order-summary">
+                    <div class="order-item">
+                        <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                        <div class="item-img">
+                            <img src="img/listgirl4.svg" alt="Product">
+                        </div>
+                        <div class="item-details">
+                            <p class="item-title">Dino Surf Swim Shorts Bleu</p>
+                            <p class="item-brand">CHICCO</p>
+                            <p class="item-size">3-6</p>
+                            <div class="item-price-qty">
+                                <span class="item-price">123 $</span>
+                                <div class="qty-control">
+                                    <button class="qty-btn">−</button>
+                                    <span class="qty-val">1</span>
+                                    <button class="qty-btn">+</button>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
-                    <div class="order">
-                        <ion-icon name="trash-outline"></ion-icon>
-                        <div class="flex">
-                            <div><img src="img/listgirl2.svg" alt=""></div>
-                            <div>
-                                <h2>Dino surf swim shorts bleu</h2>
-                                <p>CHICCO</p>
-                                <p>3-6</p>
-                                <div class="flex">
-                                    <span>123 $</span>
-                                    <div class="quantity_detr">
-                                        <button class="remove">-</button>
-                                        <span>1</span>
-                                        <button class="add">+</button>
-                                    </div>
+                    
+                    <div class="order-item">
+                        <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                        <div class="item-img">
+                            <img src="img/listgirl2.svg" alt="Product">
+                        </div>
+                        <div class="item-details">
+                            <p class="item-title">Dino Surf Swim Shorts Bleu</p>
+                            <p class="item-brand">CHICCO</p>
+                            <p class="item-size">3-6</p>
+                            <div class="item-price-qty">
+                                <span class="item-price">123 $</span>
+                                <div class="qty-control">
+                                    <button class="qty-btn">−</button>
+                                    <span class="qty-val">1</span>
+                                    <button class="qty-btn">+</button>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="copons">
-                        <p>Coupon code or gift card</p>
-                        <input type="text" placeholder="enter your coupon code">
-                        <button>apply</button>
+                    
+                    <div class="coupon-section">
+                        <p class="coupon-label">Coupon Code Or Gift Card</p>
+                        <div class="coupon-input-group">
+                            <input type="text" placeholder="Enter Your Coupon Code">
+                            <button class="apply-btn">Apply</button>
+                        </div>
                     </div>
-                    <div class="total">
-                        <div class="flex">
-                            <span>subtotal</span>
+                    
+                    <div class="totals">
+                        <div class="totals-row">
+                            <span>Subtotal</span>
                             <span>234$</span>
                         </div>
-                        <div class="flex">
+                        <div class="totals-row">
                             <span>Shipping</span>
                             <span>234$</span>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="flex">
-                        <span>total</span>
-                        <span>234$</span>
+                        <div class="totals-row final">
+                            <span>Total</span>
+                            <span>234$</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
      </main>
 
 
-    <!-- footer -->
     <footer class="footer">
         <div class="container footer flex">
           <div class="site__content">
@@ -174,7 +174,7 @@
                   <p class="content__par">At kinderly, we believe that every child deserves to express their unique style with comfort and joy. Our carefully curated collection of playful and vibrant clothing is designed to move with them, whether they're exploring the great outdoors or attending a special event. With a focus on quality fabrics and cheerful patterns, we ensure that each piece is as durable as it is delightful, allowing kids to feel free and confident in every adventure.</p>
               </div>
               <div class="content">
-                  <h2 class="content__title">Quick Links</h2>
+                  <h2 class="content__title">Site Link</h2>
                   <div class="content__links flex">
                    <a href="#">ABOUT</a>
                   <a href="#">Process</a>
@@ -186,7 +186,7 @@
                   
               </div>
               <div class="content">
-                  <h2 class="content__title">company info</h2>
+                  <h2 class="content__title">Company Info</h2>
                   <div class="content__links flex">
                   <a href="#">Terms of Use</a>
                   <a href="#">Promotions & Offers</a>
@@ -216,9 +216,37 @@
     </footer>
 
 
-     <!-- main js -->
+     <script>
+        document.getElementById('btn-card').addEventListener('click', function() {
+            this.classList.add('active');
+            document.getElementById('btn-cod').classList.remove('active');
+            document.getElementById('card-fields').style.display = 'block';
+        });
+        
+        document.getElementById('btn-cod').addEventListener('click', function() {
+            this.classList.add('active');
+            document.getElementById('btn-card').classList.remove('active');
+            document.getElementById('card-fields').style.display = 'none';
+        });
+
+        document.querySelectorAll('.qty-control').forEach(control => {
+            const minus = control.querySelector('.qty-btn:first-child');
+            const plus = control.querySelector('.qty-btn:last-child');
+            const val = control.querySelector('.qty-val');
+            
+            minus.addEventListener('click', () => {
+                let v = parseInt(val.textContent);
+                if(v > 1) val.textContent = v - 1;
+            });
+            
+            plus.addEventListener('click', () => {
+                let v = parseInt(val.textContent);
+                val.textContent = v + 1;
+            });
+        });
+     </script>
      <script src="script.js"></script>   
-     <!-- ionicons -->
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+</html>

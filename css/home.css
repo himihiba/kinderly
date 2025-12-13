@@ -1,10 +1,5 @@
-/* ************
-    global variable
-************ */
-
 :root{
     --header-height: 3.5rem;
-    /* colors */
     ---main-yellow:hsla(33, 88%, 56%, 1);
     --yellow-light:hsla(33, 91%, 96%, 1);
     --yellow-hover:hsla(33, 91%, 73%, 1);
@@ -20,19 +15,16 @@
     --white:hsl(40, 60%, 99%);
     --shadow: hsla(0, 0%, 0%, 0.25);
     --shadow-img:drop-shadow(0 8px 24px hsla(22, 100%, 8%, .2));;
-    /* weight */
     --regular:400;
     --semi-bold:600;
     --bold:700;
-    /* font size */
     --bigest-font: 1.45rem;
-    --title-font: 1 ,05rem;
-    --normal-font-size: 0,875rem;
-    --subtitle-font:1,125rem;
+    --title-font: 1.05rem;
+    --normal-font-size: 0.875rem;
+    --subtitle-font:1.125rem;
     --smalest-font: .725rem;
 }
-/* end variable */
-/* responsive typography */
+
 @media  screen and (min-width: 1150px){
     :root{
         --bigest-font: 2.25rem;
@@ -51,21 +43,21 @@
         --smalest-font: 0.575rem;
     }
 }
-/* header */
+
 
 .nav__list li a{
     margin-left: 3em;
     font-size:var(--normal-font-size);
 }
 
-/* main */
+
 .section__title {
     text-align: center;
     font-size: var(--bigest-font);
     margin-bottom: .2em;
     font-weight: var(--bold);
 }
-/* hero section */
+
 .home__container{
     flex-direction: column;
     position: relative;
@@ -109,7 +101,7 @@
     max-width: 380px;
     margin: 0 auto;
 }
-/* button */
+
 .hero__button{
     width: 60%;
     max-width: 270px;
@@ -212,7 +204,7 @@
         max-width: 300px;
     }
 }
-/* quick selection section */
+
 
 .selection__data{
     text-align: center;
@@ -360,7 +352,6 @@
     }
 }
 
-/*  new arival section  */
 
 .product__page{
     transition: color .3s ease-in-out;
@@ -485,7 +476,6 @@
     }
 }
 
-/* OPINIONS section */
 
 .opinion__card{
     background-color: var(--blue-light);
@@ -550,8 +540,6 @@
     width: 85%;
 }
 
-
-/* contact section */
 
 
 .contact{

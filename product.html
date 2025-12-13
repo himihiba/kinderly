@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinderly</title>
-    <!-- title icon -->
+    <title>Kinderly - Product Details</title>
      <link rel="shortcut icon" href="./img/title-img.jpg" type="image/x-icon">
-    <!-- css style sheet -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/toggel.css">
     <link rel="stylesheet" href="css/product.css">
-    <!-- google font  -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         
     </style>
 </head>
 <body>
-    <!-- header -->
      <header class="header">
         <nav class="nav container flex">
-            <a href="index.html" class="logo flex">Kinderly</a>
+            <a href="index.html" class="logo flex">kinderly</a>
             <div class="search__bar flex">
                 <input type="search" placeholder="Search" class="serch">
                 <ion-icon name="search-outline" class="search-icon"></ion-icon>
@@ -30,7 +26,7 @@
             <input type="checkbox" class="input__toggel" id="inputToggel">
             <div class="nav__menu flex">
                 <ul class="nav__list flex">
-                    <li><a href="category.html" class="nav__link">Categories</a></li>
+                    <li><a href="category.html" class="nav__link">Categorie</a></li>
                     <li><a href="#deal" class="nav__link">Deals</a></li>
                     <li><a href="#news" class="nav__link">News</a></li>
                 </ul>
@@ -49,81 +45,84 @@
         </nav>
      </header>
 
-    <!-- main -->
      <main>
         <div class="container">
-            <section class="section sec1 flex">
-                <div class="container show_image">
-                    <div class="show__product">
-                        <img src="img/listgirl1.svg" alt="image" class="img1">
-                        <img src="img/show_product (1).svg" alt="image" class="img2">
-                        <img src="img/show_product (2).svg" alt="image" class="img3">
+            <section class="section sec1">
+                <div class="show_image">
+                    <div class="main-product-image">
+                        <img src="img/listgirl1.svg" alt="Dino Surf Swim Shorts Bleu" id="mainImage">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <div class="thumbnail active">
+                            <img src="img/listgirl1.svg" alt="Product thumbnail 1">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/show_product (1).svg" alt="Product thumbnail 2">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="img/show_product (2).svg" alt="Product thumbnail 3">
+                        </div>
                     </div>
                 </div>
+                
                 <div class="product__info">
-                    <div class="product__vieux flex">
-                        <div class="viex__text">
-                            <h2 class="title">Dino surf swim shorts bleu</h2>
-                            <div class="rating-display">
-                                <div class="stars">
-                                    <ion-icon name="star-outline"></ion-icon>
-                                    <ion-icon name="star-outline"></ion-icon>
-                                    <ion-icon name="star-outline"></ion-icon>
-                                    <ion-icon name="star-outline"></ion-icon>
-                                    <ion-icon name="star-outline"></ion-icon>
-                                </div>
-                                <span class="average-rating">4.0</span> / 5
-                                <span class="total-ratings">(10)</span>
-                                <p>Write a review</p>
-                            </div>
-                            <p class="brandName">Brand:<span>CHICCO</span></p>
-                            <p class="stockState">in stock </p>
-                            <p class="price">123 $</p>
-                        </div>
-                        <ion-icon name="heart-outline"></ion-icon>
+                    <div class="product__header">
+                        <h2 class="product__title" id="product-title">Dino Surf Swim Shorts Bleu</h2>
+                        <button class="favorite-btn">
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </button>
                     </div>
+                    
+                    <div class="rating-section">
+                        <div class="stars-display" id="rating-stars">
+                        </div>
+                        <span class="rating-value">4.5</span>
+                        <span class="rating-count">(87)</span>
+                        <a href="#" class="write-review">Write A Review</a>
+                    </div>
+                    
+                    <p class="product__brand">Brand: <span id="product-brand">CHICCO</span></p>
+                    <p class="product__stock">In Stock</p>
+                    
+                    <p class="product__price" id="product-price">123 $</p>
+                    
                     <div class="product__colors">
-                        <h2 class="title">Color</h2>
-                        <div class="colors flex">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                        <h3 class="section-title">Color</h3>
+                        <div class="color-options" id="colors-container">
                         </div>
                     </div>
-                    <div class="product__des">
-                        <h2 class="title">Description</h2>
-                        <p class="p_des">This adorable girl's skirt is perfect for twirling and playing! Made from a soft, breathable cotton blend, it offers comfort and style all day long. Featuring a playful floral print and an elastic waistband for a snug, adjustable fit, this skirt is ideal for everyday wear or special occasions. Pair it with her favorite top and sandals for a complete look that’s sure to make her smile!</p>
+                    
+                    <div class="product__description">
+                        <h3 class="section-title">Description</h3>
+                        <p class="description-text" id="product-desc">
+                        </p>
                     </div>
+                    
                     <div class="product__sizes">
-                        <h2 class="title">choose size</h2>
-                        <div class="size flex">
-                            <div class="sizes">74/80 cm</div>
-                            <div class="sizes">86/92 cm</div>
-                            <div class="sizes">98/104 cm</div>
-                            <div class="sizes">110/116 cm</div>
+                        <h3 class="section-title">choose size</h3>
+                        <div class="size-options" id="sizes-container">
                         </div>
-                        
                     </div>
-                    <div class="quantity flex">
-                        <div class="quantity_detr">
-                            <button class="remove">-</button>
-                            <span>1</span>
-                            <button class="add">+</button>
+                    
+                    <div class="product__actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn" onclick="updateQuantity(-1)">−</button>
+                            <span class="quantity-value" id="quantity">1</span>
+                            <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
                         </div>
-                        <button>add to favoris</button>
+                        <button class="add-to-favorite">Add To Favorite</button>
                     </div>
-                    <div class="product__button Ybutton">Add to cart
-                    </div>
+                    
+                    <button class="add-to-cart-btn">Add to cart</button>
                 </div>
             </section>
+            
             <section class="section sec2">
-                <div class="slider grid">
-                    <p class="new__ar">Recently viewed</p>
+                <div class="slider">
+                    <p class="new__ar">Recently Viewed</p>
                     <div class="slider_container">
-                        <div class="card__wraper flex">
-                            <div class="product__card">
+                        <div class="card__wraper">
+                            <a href="product.html" class="product__card">
                                 <div class="show__product">
                                     <div class="product__image">
                                         <img src="img/listgirl1.svg" alt="image" class="product_img">
@@ -137,13 +136,18 @@
                                 <div class="takieem">
                                     <p class="brand_name">Chicco</p>
                                     <div class="stars">
-                                        
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star empty">★</span>
                                     </div>
                                 </div>
                                 <p class="product__name">Kurti Full Sleev</p>
-                                <p class="price">&dollar;200 <del>&dollar;300</del></p>
-                            </div>
-                            <div class="product__card">
+                                <p class="price">$200 <del>$300</del></p>
+                            </a>
+                            
+                            <a href="product.html" class="product__card">
                                 <div class="show__product">
                                     <div class="product__image">
                                         <img src="img/listgirl2.svg" alt="image" class="product_img">
@@ -157,13 +161,18 @@
                                 <div class="takieem">
                                     <p class="brand_name">Chicco</p>
                                     <div class="stars">
-                                        
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
                                     </div>
                                 </div>
                                 <p class="product__name">Kurti Full Sleev</p>
-                                <p class="price">&dollar;200 <del>&dollar;300</del></p>
-                            </div>
-                            <div class="product__card">
+                                <p class="price">$200 <del>$300</del></p>
+                            </a>
+                            
+                            <a href="product.html" class="product__card">
                                 <div class="show__product">
                                     <div class="product__image">
                                         <img src="img/listgirl3.svg" alt="image" class="product_img">
@@ -177,11 +186,16 @@
                                 <div class="takieem">
                                     <p class="brand_name">Chicco</p>
                                     <div class="stars">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star empty">★</span>
                                     </div>
                                 </div>
                                 <p class="product__name">Kurti Full Sleev</p>
-                                <p class="price">&dollar;200 <del>&dollar;300</del></p>
-                            </div>
+                                <p class="price">$200 <del>$300</del></p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -190,60 +204,65 @@
      </main>
 
 
-    <!-- footer -->
     <footer class="footer">
         <div class="container footer flex">
           <div class="site__content">
               <div class="content">
-                  <h2 class="content__title">kinderly</h2>
-                  <p class="content__par">At kinderly, we believe that every child deserves to express their unique style with comfort and joy. Our carefully curated collection of playful and vibrant clothing is designed to move with them, whether they're exploring the great outdoors or attending a special event. With a focus on quality fabrics and cheerful patterns, we ensure that each piece is as durable as it is delightful, allowing kids to feel free and confident in every adventure.</p>
+                  <h2 class="content__title">Kinderly</h2>
+                  <p class="content__par">Morem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Nunc Vulputate Libero Et Velit Interdum, Ac Aliquet Odio Mattis. Class Aptent Taciti Sociosqu Ad Litora Torquent Per Conubia Nostra, Per Inceptos Himenaeos. Curabitur Tempus Urna At Turpis Condimentum Lobortis.</p>
               </div>
               <div class="content">
-                  <h2 class="content__title">Quick Links</h2>
+                  <h2 class="content__title">Site Link</h2>
                   <div class="content__links flex">
                    <a href="#">ABOUT</a>
                   <a href="#">Process</a>
-                  <a href="#">contact</a>
+                  <a href="#">Contact</a>
                   <a href="#">Services</a>
                   <a href="#">Experience</a>
-                  <a href="#">privacy policy</a>   
+                  <a href="#">Privacy Policy</a>   
                   </div>
                   
               </div>
               <div class="content">
-                  <h2 class="content__title">company info</h2>
+                  <h2 class="content__title">Company Info</h2>
                   <div class="content__links flex">
-                  <a href="#">Terms of Use</a>
+                  <a href="#">Terms Of Use</a>
                   <a href="#">Promotions & Offers</a>
-                  <a href="#">Find Store Location</a>
+                  <a href="#">Find A Store</a>
                   <a href="#">Accessibility</a>
                   <a href="#">FAQ</a>
+                  <a href="#">Do Not Sell Or Share My Personal Information</a>
                   </div>
                   
               </div>
               <div class="content">
                   <h2 class="content__title">Contact</h2>
                   <p class="number">Call 1-878-876-9879</p>
-                  <p class="content__par">For inquiries and support</p>
+                  <p class="content__par">For A Free Consultation</p>
               </div>
           </div>
           <div class="site__right flex">
-              <p class="rights">© 2024 Little Sprouts. All rights reserved. Website developed by Himi Hiba
-              <ion-icon name="logo-github"></ion-icon>,
-              Front-End Developer. UI/UX design by [Designer’s Name].</p>
+              <p class="rights">2007- 2019 Jack Tones Help. All Rights Reserved</p>
               <div class="social__icons">
-                  <ion-icon name="logo-instagram"></ion-icon>
                   <ion-icon name="logo-facebook"></ion-icon>
-                  <ion-icon name="logo-tiktok"></ion-icon>
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <ion-icon name="logo-twitter"></ion-icon>
               </div>
           </div>
         </div>
     </footer>
 
 
-    <!-- main js -->
-      <script src="script.js"></script>
-     <!-- ionicons -->
+    <script>
+        function updateQuantity(change) {
+            const quantityEl = document.getElementById('quantity');
+            let quantity = parseInt(quantityEl.textContent);
+            quantity = Math.max(1, quantity + change);
+            quantityEl.textContent = quantity;
+        }
+    </script>
+     <script src="script.js"></script>
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+</html>

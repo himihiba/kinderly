@@ -1,4 +1,3 @@
-/* humburger menu */
 
 .input__toggel{
     display: none;
@@ -20,7 +19,6 @@
   .navig_menu::after,.navig_menu::before{
     content: '';
     position: absolute;
-    /* transition: rotate 500ms ease ; */
   }
   .navig_menu::after{
     bottom: 7px;
@@ -29,7 +27,6 @@
     top: 7px;
   }
   
-  /* nav drop */
   
   .input__toggel:checked~  .nav__menu{
     top:8rem;
@@ -44,14 +41,10 @@
     top: 0;
     rotate: 90deg;
   }
-  /* label span{
-    transition: rotate 500ms ease ;
-  } */
   .input__toggel:checked~ label span{
     rotate: 45deg;
   }
   
-  /* Navigation for mobile devices */
   
   @media  screen and (max-width:1150px)  {
     .nav__menu,.nav__icon{
@@ -67,7 +60,6 @@
       display: block;
     }
     .nav__list{
-      /* flex-direction: column; */
       gap: 2em;
       width: 90%;
       padding: 2em 0;

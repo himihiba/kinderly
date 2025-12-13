@@ -1,10 +1,5 @@
-/* ************
-    global variable
-************ */
-
 :root{
     --header-height: 3.5rem;
-    /* colors */
     ---main-yellow:hsla(33, 88%, 56%, 1);
     --yellow-light:hsla(33, 91%, 96%, 1);
     --yellow-hover:hsla(33, 91%, 73%, 1);
@@ -20,20 +15,16 @@
     --white:hsla(40, 60%, 99%, 1);
     --shadow: hsla(0, 0%, 0%, 0.25);
     --shadow-img:drop-shadow(0 8px 24px hsla(22, 100%, 8%, .2));;
-    /* weight */
     --regular:400;
     --semi-bold:600;
     --bold:700;
-    /* font size */
-    --bigest-font:  2,0625rem;
-    --title-font: 1,75rem;
-    --normal-font-size: 0,875rem;
-    --subtitle-font:1,125rem;
-    --smalest-font: 0,625rem;
+    --bigest-font:  2.0625rem;
+    --title-font: 1.75rem;
+    --normal-font-size: 0.875rem;
+    --subtitle-font:1.125rem;
+    --smalest-font: 0.625rem;
 }
-/* end variable */
 
-/* responsive typography */
 @media  screen and (min-width: 1150px){
     :root{
         --bigest-font: 2.75rem;
@@ -44,7 +35,6 @@
     }
 }
 
-/* global ruls */
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -97,9 +87,7 @@ button{
     background-color: transparent;
     border: none;
 }
-/* ************
-    REUSABLE CSS CLASSES
-************ */
+
 
 .container{
     max-width: 1150px;
@@ -111,10 +99,7 @@ button{
     justify-content: space-between;
     align-items: center;
 }
-/* .grid{
-    display: grid;
-    gap: 1.5rem;
-} */
+
 .section {
     padding-block: 5rem 0;
     width: 100%;
